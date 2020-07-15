@@ -127,4 +127,15 @@ F 12 "Active" H 1825 6050 60  0001 L CNN "Status"
 	1    1625 4850
 	1    0    0    -1  
 $EndComp
+$Comp
+L Project3:DS1337_PDv1 U?
+U 1 1 5F0DBCFF
+P 3775 5900
+F 0 "U?" H 3750 7015 50  0000 C CNN
+F 1 "DS1337_PDv1" H 3750 6924 50  0000 C CNN
+F 2 "" H 3475 6250 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1337-DS1337C.pdf" H 3475 6250 50  0001 C CNN
+	1    3775 5900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
