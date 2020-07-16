@@ -101,12 +101,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21941B.pdf" H 2100 4500 50 
 	1    2100 4500
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 5175 5550 1150 1800
-U 5F0D3531
-F0 "Connectors" 50
-F1 "Connectors.sch" 50
-$EndSheet
 $Comp
 L dk_Embedded-Microcontrollers:ATMEGA328P-AU U4
 U 1 1 5F0D825C
@@ -153,8 +147,8 @@ $Comp
 L Device:Crystal Y2
 U 1 1 5F0EA205
 P 5050 2825
-F 0 "Y2" H 5050 3093 50  0000 C CNN
-F 1 "Crystal 16 MHz" H 5050 3002 50  0000 C CNN
+F 0 "Y2" V 5425 2825 50  0000 C CNN
+F 1 "Crystal 16 MHz" V 5300 2825 50  0000 C CNN
 F 2 "Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm_HandSoldering" H 5050 2825 50  0001 C CNN
 F 3 "~" H 5050 2825 50  0001 C CNN
 	1    5050 2825
@@ -182,4 +176,169 @@ F 3 "" H 8925 4300 50  0001 C CNN
 	1    8925 4300
 	1    0    0    -1  
 $EndComp
+Text HLabel 4700 5825 2    50   Input ~ 0
+MISO
+Text Label 4500 5825 2    50   ~ 0
+MISO
+Wire Wire Line
+	4700 5825 4500 5825
+Text Label 5875 3650 2    50   ~ 0
+MISO
+$Sheet
+S 4700 5575 1150 1800
+U 5F0D3531
+F0 "Connectors" 50
+F1 "Connectors.sch" 50
+F2 "SCK" B L 4700 6125 50 
+F3 "RESET" O L 4700 6275 50 
+F4 "VCC" I L 4700 6950 50 
+F5 "MOSI" I L 4700 5975 50 
+F6 "GND" I L 4700 7100 50 
+F7 "RX" I L 4700 6500 50 
+F8 "TX" O L 4700 6625 50 
+F9 "SDA" B R 5850 5775 50 
+F10 "D2" B R 5850 6275 50 
+F11 "D3" B R 5850 6400 50 
+F12 "D4" B R 5850 6525 50 
+F13 "D5" B R 5850 6650 50 
+F14 "D6" B R 5850 6775 50 
+F15 "D7" B R 5850 6900 50 
+F16 "D8" B R 5850 7025 50 
+$EndSheet
+Text Label 4500 5975 2    50   ~ 0
+MOSI
+Text Label 4500 6125 2    50   ~ 0
+SCK
+Text Label 4500 6275 2    50   ~ 0
+RESET
+Text Label 4500 6950 2    50   ~ 0
+VCC
+Text Label 4500 7100 2    50   ~ 0
+GND
+Wire Wire Line
+	4700 5975 4500 5975
+Wire Wire Line
+	4700 6125 4500 6125
+Wire Wire Line
+	4700 6950 4500 6950
+Wire Wire Line
+	4500 6275 4700 6275
+Wire Wire Line
+	4500 7100 4600 7100
+Text Label 5875 3550 2    50   ~ 0
+MOSI
+Text Label 5875 3750 2    50   ~ 0
+SCK
+Text Label 5875 4450 2    50   ~ 0
+RESET
+Text Label 6475 1975 2    50   ~ 0
+VCC
+Wire Wire Line
+	6375 2250 6375 2125
+Wire Wire Line
+	6375 2125 6475 2125
+Wire Wire Line
+	6575 2125 6575 2250
+Wire Wire Line
+	6475 2250 6475 2125
+Connection ~ 6475 2125
+Wire Wire Line
+	6475 2125 6575 2125
+Wire Wire Line
+	6475 1975 6475 2125
+Wire Wire Line
+	6375 5350 6375 5500
+Wire Wire Line
+	6375 5500 6475 5500
+Wire Wire Line
+	6575 5500 6575 5350
+Connection ~ 6475 5500
+Wire Wire Line
+	6475 5500 6575 5500
+Wire Wire Line
+	6475 5350 6475 5500
+Text Label 6475 5700 2    50   ~ 0
+GND
+Wire Wire Line
+	6475 5500 6475 5700
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5F101DCC
+P 4500 7500
+F 0 "#PWR?" H 4500 7300 50  0001 C CNN
+F 1 "GNDPWR" H 4504 7346 50  0000 C CNN
+F 2 "" H 4500 7450 50  0001 C CNN
+F 3 "" H 4500 7450 50  0001 C CNN
+	1    4500 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 7500 4500 7200
+Wire Wire Line
+	4500 7200 4600 7200
+Wire Wire Line
+	4600 7200 4600 7100
+Connection ~ 4600 7100
+Wire Wire Line
+	4600 7100 4700 7100
+Text Label 6150 5775 0    50   ~ 0
+SDA
+Text Label 6150 6275 0    50   ~ 0
+D2
+Text Label 6150 6400 0    50   ~ 0
+D3
+Text Label 6150 6525 0    50   ~ 0
+D4
+Text Label 6150 6650 0    50   ~ 0
+D5
+Text Label 6150 6775 0    50   ~ 0
+D6
+Text Label 6150 6900 0    50   ~ 0
+D7
+Text Label 6150 7025 0    50   ~ 0
+D8
+Text Label 4500 6500 2    50   ~ 0
+RX
+Text Label 4500 6625 2    50   ~ 0
+TX
+Wire Wire Line
+	5850 6275 6150 6275
+Wire Wire Line
+	6150 6400 5850 6400
+Wire Wire Line
+	5850 6525 6150 6525
+Wire Wire Line
+	6150 6650 5850 6650
+Wire Wire Line
+	5850 6775 6150 6775
+Wire Wire Line
+	5850 6900 6150 6900
+Wire Wire Line
+	6150 7025 5850 7025
+Wire Wire Line
+	5850 5775 6150 5775
+Wire Wire Line
+	4500 6500 4700 6500
+Wire Wire Line
+	4700 6625 4500 6625
+Text Label 5875 2550 2    50   ~ 0
+D3
+Text Label 5875 2650 2    50   ~ 0
+D4
+Text Label 5875 2950 2    50   ~ 0
+D5
+Text Label 5875 3050 2    50   ~ 0
+D6
+Text Label 5875 3150 2    50   ~ 0
+D7
+Text Label 5875 3250 2    50   ~ 0
+D8
+Text Label 5875 4250 2    50   ~ 0
+SDA
+Text Label 5875 4550 2    50   ~ 0
+RX
+Text Label 5875 4650 2    50   ~ 0
+TX
+Text Label 5875 4750 2    50   ~ 0
+D2
 $EndSCHEMATC
