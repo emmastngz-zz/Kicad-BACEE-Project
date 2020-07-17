@@ -93,12 +93,12 @@ $EndComp
 $Comp
 L Memory_EEPROM:24LC1025 U3
 U 1 1 5F0D1B59
-P 2100 4500
-F 0 "U3" H 1375 4975 50  0000 C CNN
-F 1 "24LC1025" H 1525 4900 50  0000 C CNN
-F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 2100 4500 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21941B.pdf" H 2100 4500 50  0001 C CNN
-	1    2100 4500
+P 1425 4625
+F 0 "U3" H 700 5100 50  0000 C CNN
+F 1 "24LC1025" H 850 5025 50  0000 C CNN
+F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 1425 4625 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21941B.pdf" H 1425 4625 50  0001 C CNN
+	1    1425 4625
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -137,12 +137,12 @@ $EndComp
 $Comp
 L Memory_EEPROM:24LC1025 U2
 U 1 1 5F0EDBCB
-P 3350 4500
-F 0 "U2" H 3875 4975 50  0000 C CNN
-F 1 "24LC1025" H 4025 4900 50  0000 C CNN
-F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 3350 4500 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21941B.pdf" H 3350 4500 50  0001 C CNN
-	1    3350 4500
+P 2675 4625
+F 0 "U2" H 2900 5200 50  0000 C CNN
+F 1 "24LC1025" H 3025 5100 50  0000 C CNN
+F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 2675 4625 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21941B.pdf" H 2675 4625 50  0001 C CNN
+	1    2675 4625
 	1    0    0    -1  
 $EndComp
 Text Label 4500 5825 2    50   ~ 0
@@ -347,74 +347,74 @@ Text Label 2625 2125 0    50   ~ 0
 SCK
 Text Label 2625 2375 0    50   ~ 0
 SDA
-Text Label 2700 3875 2    50   ~ 0
+Text Label 2025 4000 2    50   ~ 0
 VCC
 Wire Wire Line
-	2100 4200 2100 3975
+	1425 4325 1425 4100
 Wire Wire Line
-	2100 3975 2700 3975
+	1425 4100 2025 4100
 Wire Wire Line
-	3350 3975 3350 4200
+	2675 4100 2675 4325
 Wire Wire Line
-	2700 3875 2700 3975
-Connection ~ 2700 3975
+	2025 4000 2025 4100
+Connection ~ 2025 4100
 Wire Wire Line
-	2700 3975 3350 3975
+	2025 4100 2675 4100
 Wire Wire Line
-	2100 4800 2100 5075
+	1425 4925 1425 5200
 Wire Wire Line
-	2100 5075 2600 5075
+	1425 5200 1925 5200
 Wire Wire Line
-	3350 5075 3350 4800
+	2675 5200 2675 4925
 $Comp
 L power:GNDPWR #PWR0103
 U 1 1 5F12642A
-P 2700 5250
-F 0 "#PWR0103" H 2700 5050 50  0001 C CNN
-F 1 "GNDPWR" H 2704 5096 50  0000 C CNN
-F 2 "" H 2700 5200 50  0001 C CNN
-F 3 "" H 2700 5200 50  0001 C CNN
-	1    2700 5250
+P 2025 5375
+F 0 "#PWR0103" H 2025 5175 50  0001 C CNN
+F 1 "GNDPWR" H 2029 5221 50  0000 C CNN
+F 2 "" H 2025 5325 50  0001 C CNN
+F 3 "" H 2025 5325 50  0001 C CNN
+	1    2025 5375
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2700 5250 2700 5075
-Connection ~ 2700 5075
+	2025 5375 2025 5200
+Connection ~ 2025 5200
 Wire Wire Line
-	2700 5075 3350 5075
+	2025 5200 2675 5200
 Wire Wire Line
-	2500 4600 2600 4600
+	1825 4725 1925 4725
 Wire Wire Line
-	2600 4600 2600 5075
-Connection ~ 2600 5075
+	1925 4725 1925 5200
+Connection ~ 1925 5200
 Wire Wire Line
-	2600 5075 2700 5075
+	1925 5200 2025 5200
 Wire Wire Line
-	3750 4600 3875 4600
+	3075 4725 3200 4725
 Wire Wire Line
-	3875 4600 3875 5075
+	3200 4725 3200 5200
 Wire Wire Line
-	3875 5075 3350 5075
-Connection ~ 3350 5075
-Text Label 1700 4600 2    50   ~ 0
+	3200 5200 2675 5200
+Connection ~ 2675 5200
+Text Label 1025 4725 2    50   ~ 0
 VCC
-Text Label 2950 4600 2    50   ~ 0
+Text Label 2275 4725 2    50   ~ 0
 VCC
-Text Label 2500 4400 0    50   ~ 0
+Text Label 1825 4525 0    50   ~ 0
 SDA
-Text Label 2500 4500 0    50   ~ 0
+Text Label 1825 4625 0    50   ~ 0
 SCK
-Text Label 3750 4500 0    50   ~ 0
+Text Label 3075 4625 0    50   ~ 0
 SCK
-Text Label 3750 4400 0    50   ~ 0
+Text Label 3075 4525 0    50   ~ 0
 SDA
-Text Label 1700 4400 2    50   ~ 0
+Text Label 1025 4525 2    50   ~ 0
 ADDS1
-Text Label 2950 4400 2    50   ~ 0
+Text Label 2275 4525 2    50   ~ 0
 ADDS1
-Text Label 1700 4500 2    50   ~ 0
+Text Label 1025 4625 2    50   ~ 0
 ADDS2
-Text Label 2950 4500 2    50   ~ 0
+Text Label 2275 4625 2    50   ~ 0
 ADDS2
 Text Label 5850 2650 2    50   ~ 0
 ADDS1
@@ -587,4 +587,44 @@ Wire Wire Line
 Connection ~ 7300 775 
 Wire Wire Line
 	7300 775  8600 775 
+Wire Notes Line
+	600  1175 600  3325
+Wire Notes Line
+	600  3325 3150 3325
+Wire Notes Line
+	3150 3325 3150 1175
+Wire Notes Line
+	3150 1175 600  1175
+Wire Notes Line
+	4125 7725 6475 7725
+Wire Notes Line
+	6475 7725 6475 5375
+Wire Notes Line
+	4125 7725 4125 5375
+Wire Notes Line
+	4125 5375 6475 5375
+Wire Notes Line
+	550  3850 550  5750
+Wire Notes Line
+	9625 4975 9625 500 
+Wire Notes Line
+	9625 500  3525 500 
+Wire Notes Line
+	3525 500  3525 4975
+Wire Notes Line
+	3525 4975 9625 4975
+Wire Notes Line
+	550  5750 3425 5750
+Wire Notes Line
+	3425 5750 3425 3850
+Wire Notes Line
+	3425 3850 550  3850
+Text Notes 600  1175 0    50   ~ 0
+N1 - Clock/Calendar
+Text Notes 550  3850 0    50   ~ 0
+N3 - EEPROM
+Text Notes 3525 500  0    50   ~ 0
+N2 - Atmega 328P-AU with oscillator and battery
+Text Notes 4125 5350 0    50   ~ 0
+N4 - Connectors
 $EndSCHEMATC

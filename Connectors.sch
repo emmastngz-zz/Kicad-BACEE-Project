@@ -49,12 +49,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J4
 U 1 1 5F0D5F3F
-P 6900 2775
-F 0 "J4" H 6980 2767 50  0000 L CNN
-F 1 "I2C" H 6980 2676 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 6900 2775 50  0001 C CNN
-F 3 "~" H 6900 2775 50  0001 C CNN
-	1    6900 2775
+P 6900 2750
+F 0 "J4" H 6980 2742 50  0000 L CNN
+F 1 "I2C" H 6980 2651 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 6900 2750 50  0001 C CNN
+F 3 "~" H 6900 2750 50  0001 C CNN
+	1    6900 2750
 	1    0    0    -1  
 $EndComp
 Text HLabel 6475 4975 0    50   Output ~ 0
@@ -77,13 +77,13 @@ Text HLabel 4625 2850 0    50   Input ~ 0
 RX
 Text HLabel 4625 2950 0    50   Output ~ 0
 TX
-Text HLabel 6700 2675 0    50   Input ~ 0
+Text HLabel 6700 2650 0    50   Input ~ 0
 GND
-Text HLabel 6700 2775 0    50   Input ~ 0
+Text HLabel 6700 2750 0    50   Input ~ 0
 VCC
-Text HLabel 6700 2975 0    50   Input ~ 0
+Text HLabel 6700 2950 0    50   Input ~ 0
 SCK
-Text HLabel 6700 2875 0    50   BiDi ~ 0
+Text HLabel 6700 2850 0    50   BiDi ~ 0
 SDA
 Text HLabel 4600 4350 0    50   BiDi ~ 0
 D2
@@ -103,4 +103,12 @@ Text HLabel 4600 5050 0    50   Input ~ 0
 GND
 Text HLabel 4600 5150 0    50   Input ~ 0
 VCC
+Text Notes 4500 2500 0    50   ~ 0
+N6 - Serial connector
+Text Notes 6400 2500 0    50   ~ 0
+N5 - I2C connector\n
+Text Notes 4300 4200 0    50   ~ 0
+N7 - GPIO connector
+Text Notes 6425 4575 0    50   ~ 0
+N8 - SPI connector
 $EndSCHEMATC
