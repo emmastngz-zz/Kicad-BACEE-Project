@@ -72,15 +72,15 @@ GND
 Text HLabel 4625 2650 0    50   Input ~ 0
 GND
 Text HLabel 4625 2750 0    50   Input ~ 0
-Vcc
+VCC
 Text HLabel 4625 2850 0    50   Input ~ 0
 RX
 Text HLabel 4625 2950 0    50   Output ~ 0
 TX
-Text HLabel 6675 2675 0    50   Input ~ 0
+Text HLabel 6700 2675 0    50   Input ~ 0
 GND
 Text HLabel 6700 2775 0    50   Input ~ 0
-Vcc
+VCC
 Text HLabel 6700 2975 0    50   Input ~ 0
 SCK
 Text HLabel 6700 2875 0    50   BiDi ~ 0
@@ -99,8 +99,8 @@ Text HLabel 4600 4850 0    50   BiDi ~ 0
 D7
 Text HLabel 4600 4950 0    50   BiDi ~ 0
 D8
-Text HLabel 4600 5050 0    50   BiDi ~ 0
+Text HLabel 4600 5050 0    50   Input ~ 0
 GND
-Text HLabel 4600 5150 0    50   BiDi ~ 0
-Vcc
+Text HLabel 4600 5150 0    50   Input ~ 0
+VCC
 $EndSCHEMATC

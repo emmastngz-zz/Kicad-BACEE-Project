@@ -145,12 +145,8 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21941B.pdf" H 3350 4500 50 
 	1    3350 4500
 	1    0    0    -1  
 $EndComp
-Text HLabel 4700 5825 2    50   Input ~ 0
-MISO
 Text Label 4500 5825 2    50   ~ 0
 MISO
-Wire Wire Line
-	4700 5825 4500 5825
 Text Label 5850 2450 2    50   ~ 0
 MISO
 $Sheet
@@ -173,6 +169,7 @@ F13 "D5" B R 5850 6650 50
 F14 "D6" B R 5850 6775 50 
 F15 "D7" B R 5850 6900 50 
 F16 "D8" B R 5850 7025 50 
+F17 "MISO" O L 4700 5825 50 
 $EndSheet
 Text Label 4500 5975 2    50   ~ 0
 MOSI
@@ -207,8 +204,6 @@ Wire Wire Line
 Wire Wire Line
 	6350 925  6450 925 
 Wire Wire Line
-	6550 925  6550 1050
-Wire Wire Line
 	6450 1050 6450 925 
 Connection ~ 6450 925 
 Wire Wire Line
@@ -229,10 +224,10 @@ Wire Wire Line
 Text Label 6450 4500 2    50   ~ 0
 GND
 $Comp
-L power:GNDPWR #PWR?
+L power:GNDPWR #PWR0101
 U 1 1 5F101DCC
 P 4500 7500
-F 0 "#PWR?" H 4500 7300 50  0001 C CNN
+F 0 "#PWR0101" H 4500 7300 50  0001 C CNN
 F 1 "GNDPWR" H 4504 7346 50  0000 C CNN
 F 2 "" H 4500 7450 50  0001 C CNN
 F 3 "" H 4500 7450 50  0001 C CNN
@@ -308,8 +303,6 @@ Text Label 5850 3450 2    50   ~ 0
 TX
 Text Label 5850 3550 2    50   ~ 0
 D2
-Text Label 5850 2950 2    50   ~ 0
-SCL
 Wire Wire Line
 	800  1600 1250 1600
 Wire Wire Line
@@ -319,10 +312,10 @@ Wire Wire Line
 Wire Wire Line
 	800  1600 800  1850
 $Comp
-L power:GNDPWR #PWR?
+L power:GNDPWR #PWR0102
 U 1 1 5F11BB4A
 P 2025 2875
-F 0 "#PWR?" H 2025 2675 50  0001 C CNN
+F 0 "#PWR0102" H 2025 2675 50  0001 C CNN
 F 1 "GNDPWR" H 2029 2721 50  0000 C CNN
 F 2 "" H 2025 2825 50  0001 C CNN
 F 3 "" H 2025 2825 50  0001 C CNN
@@ -374,10 +367,10 @@ Wire Wire Line
 Wire Wire Line
 	3350 5075 3350 4800
 $Comp
-L power:GNDPWR #PWR?
+L power:GNDPWR #PWR0103
 U 1 1 5F12642A
 P 2700 5250
-F 0 "#PWR?" H 2700 5050 50  0001 C CNN
+F 0 "#PWR0103" H 2700 5050 50  0001 C CNN
 F 1 "GNDPWR" H 2704 5096 50  0000 C CNN
 F 2 "" H 2700 5200 50  0001 C CNN
 F 3 "" H 2700 5200 50  0001 C CNN
@@ -428,10 +421,10 @@ ADDS1
 Text Label 5850 2750 2    50   ~ 0
 ADDS2
 $Comp
-L power:GNDPWR #PWR?
+L power:GNDPWR #PWR0104
 U 1 1 5F13096F
 P 8600 3325
-F 0 "#PWR?" H 8600 3125 50  0001 C CNN
+F 0 "#PWR0104" H 8600 3125 50  0001 C CNN
 F 1 "GNDPWR" H 8604 3171 50  0000 C CNN
 F 2 "" H 8600 3275 50  0001 C CNN
 F 3 "" H 8600 3275 50  0001 C CNN
@@ -456,7 +449,7 @@ Wire Wire Line
 Wire Wire Line
 	8900 2575 8900 2725
 Wire Wire Line
-	6450 775  8600 775 
+	6450 775  7300 775 
 Wire Wire Line
 	8600 775  8600 2575
 Connection ~ 8600 2575
@@ -487,10 +480,10 @@ Wire Wire Line
 Wire Wire Line
 	3700 1475 3700 1900
 $Comp
-L power:GNDPWR #PWR?
+L power:GNDPWR #PWR0105
 U 1 1 5F1499FF
 P 3700 2025
-F 0 "#PWR?" H 3700 1825 50  0001 C CNN
+F 0 "#PWR0105" H 3700 1825 50  0001 C CNN
 F 1 "GNDPWR" H 3704 1871 50  0000 C CNN
 F 2 "" H 3700 1975 50  0001 C CNN
 F 3 "" H 3700 1975 50  0001 C CNN
@@ -502,26 +495,6 @@ Wire Wire Line
 Wire Wire Line
 	3700 2025 3700 1900
 Connection ~ 3700 1900
-$Comp
-L dk_Embedded-Microcontrollers:ATMEGA328P-AU U4
-U 1 1 5F0D825C
-P 6350 2650
-F 0 "U4" H 6678 2753 60  0000 L CNN
-F 1 "ATMEGA328P-AU" H 6678 2647 60  0000 L CNN
-F 2 "digikey-footprints:TQFP-32_7x7mm" H 6550 2850 60  0001 L CNN
-F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en608326" H 6550 2950 60  0001 L CNN
-F 4 "ATMEGA328P-AU-ND" H 6550 3050 60  0001 L CNN "Digi-Key_PN"
-F 5 "ATMEGA328P-AU" H 6550 3150 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 6550 3250 60  0001 L CNN "Category"
-F 7 "Embedded - Microcontrollers" H 6550 3350 60  0001 L CNN "Family"
-F 8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en608326" H 6550 3450 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/microchip-technology/ATMEGA328P-AU/ATMEGA328P-AU-ND/1832260" H 6550 3550 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC MCU 8BIT 32KB FLASH 32TQFP" H 6550 3650 60  0001 L CNN "Description"
-F 11 "Microchip Technology" H 6550 3750 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6550 3850 60  0001 L CNN "Status"
-	1    6350 2650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5075 2550 5850 2550
 Wire Wire Line
@@ -529,10 +502,10 @@ Wire Wire Line
 Wire Wire Line
 	4525 2550 4525 2725
 $Comp
-L power:GNDPWR #PWR?
+L power:GNDPWR #PWR0106
 U 1 1 5F161C93
 P 4525 3200
-F 0 "#PWR?" H 4525 3000 50  0001 C CNN
+F 0 "#PWR0106" H 4525 3000 50  0001 C CNN
 F 1 "GNDPWR" H 4529 3046 50  0000 C CNN
 F 2 "" H 4525 3150 50  0001 C CNN
 F 3 "" H 4525 3150 50  0001 C CNN
@@ -555,10 +528,10 @@ Connection ~ 5275 3750
 Wire Wire Line
 	5275 3750 5275 3775
 $Comp
-L power:GNDPWR #PWR?
+L power:GNDPWR #PWR0107
 U 1 1 5F16FCAB
 P 6450 4625
-F 0 "#PWR?" H 6450 4425 50  0001 C CNN
+F 0 "#PWR0107" H 6450 4425 50  0001 C CNN
 F 1 "GNDPWR" H 6454 4471 50  0000 C CNN
 F 2 "" H 6450 4575 50  0001 C CNN
 F 3 "" H 6450 4575 50  0001 C CNN
@@ -567,4 +540,51 @@ F 3 "" H 6450 4575 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6450 4300 6450 4625
+NoConn ~ 5850 3850
+NoConn ~ 5850 3650
+NoConn ~ 5850 3150
+NoConn ~ 5850 2850
+NoConn ~ 5850 2250
+NoConn ~ 5850 2150
+Wire Wire Line
+	4700 5825 4500 5825
+Wire Wire Line
+	6550 925  6550 1050
+NoConn ~ 5850 2950
+$Comp
+L dk_Embedded-Microcontrollers:ATMEGA328P-AU U4
+U 1 1 5F0D825C
+P 6350 2650
+F 0 "U4" H 6678 2753 60  0000 L CNN
+F 1 "ATMEGA328P-AU" H 6678 2647 60  0000 L CNN
+F 2 "digikey-footprints:TQFP-32_7x7mm" H 6550 2850 60  0001 L CNN
+F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en608326" H 6550 2950 60  0001 L CNN
+F 4 "ATMEGA328P-AU-ND" H 6550 3050 60  0001 L CNN "Digi-Key_PN"
+F 5 "ATMEGA328P-AU" H 6550 3150 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 6550 3250 60  0001 L CNN "Category"
+F 7 "Embedded - Microcontrollers" H 6550 3350 60  0001 L CNN "Family"
+F 8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en608326" H 6550 3450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/microchip-technology/ATMEGA328P-AU/ATMEGA328P-AU-ND/1832260" H 6550 3550 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC MCU 8BIT 32KB FLASH 32TQFP" H 6550 3650 60  0001 L CNN "Description"
+F 11 "Microchip Technology" H 6550 3750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6550 3850 60  0001 L CNN "Status"
+	1    6350 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F1973DA
+P 7300 700
+F 0 "#FLG0101" H 7300 775 50  0001 C CNN
+F 1 "PWR_FLAG" H 7300 873 50  0000 C CNN
+F 2 "" H 7300 700 50  0001 C CNN
+F 3 "~" H 7300 700 50  0001 C CNN
+	1    7300 700 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 700  7300 775 
+Connection ~ 7300 775 
+Wire Wire Line
+	7300 775  8600 775 
 $EndSCHEMATC
