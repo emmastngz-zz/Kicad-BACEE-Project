@@ -82,7 +82,7 @@ GND
 Text HLabel 6700 2775 0    50   Input ~ 0
 Vcc
 Text HLabel 6700 2975 0    50   Input ~ 0
-SCKI2C
+SCK
 Text HLabel 6700 2875 0    50   BiDi ~ 0
 SDA
 Text HLabel 4600 4350 0    50   BiDi ~ 0
