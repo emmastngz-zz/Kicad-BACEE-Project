@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 8)
+    (drawings 12)
     (tracks 0)
     (zones 0)
     (modules 17)
@@ -978,6 +978,10 @@
     )
   )
 
+  (gr_circle (center 90.424 116.84) (end 91.44 116.078) (layer Edge.Cuts) (width 0.05) (tstamp 5F13CE93))
+  (gr_circle (center 90.424 90.678) (end 91.44 89.916) (layer Edge.Cuts) (width 0.05) (tstamp 5F13CE80))
+  (gr_circle (center 53.594 116.84) (end 54.61 116.078) (layer Edge.Cuts) (width 0.05) (tstamp 5F13CE79))
+  (gr_circle (center 53.594 90.678) (end 54.61 89.916) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 92.202 118.11) (end 92.202 89.408) (layer Edge.Cuts) (width 0.05) (tstamp 5F13CDE3))
   (gr_line (start 52.324 118.618) (end 91.694 118.618) (layer Edge.Cuts) (width 0.05) (tstamp 5F13CDE2))
   (gr_line (start 51.816 89.408) (end 51.816 118.11) (layer Edge.Cuts) (width 0.05) (tstamp 5F13CDE0))
